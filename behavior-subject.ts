@@ -9,7 +9,7 @@ setInterval(() => {
 }, 2000);
 
 behaviorSubject.subscribe(data => {
-    log(2, data);
+    log(1, data);
 });
 
 setTimeout(() => {
@@ -17,3 +17,5 @@ setTimeout(() => {
         log(2, data);
     });
 }, 5000);
+
+behaviorSubject.getValue();
